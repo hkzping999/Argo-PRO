@@ -35,30 +35,5 @@ bash <(curl -fsSL https://raw.githubusercontent.com/hkzping999/Argo-Pro/main/arg
 
 但更推荐使用 `install.sh`。
 
-## 本地自检
-
-```bash
-bash -n install.sh
-bash -n argox.sh
-bash -n argox-next.sh
-./argox-next.sh --test-modules
-./argox-next.sh --list-protocols
-./argox-next.sh --build-sample > /tmp/argo-pro-inbound.sample.json
-```
-
-## 上传到 GitHub
-
-不要复制粘贴 `argox.sh` 内容。请解压本项目包后直接上传文件，或用 Git 命令推送整个目录。
-
-```bash
-git init
-git config core.autocrlf false
-git config core.eol lf
-git add .
-git commit -m "Upload Argo-Pro latest deployable package"
-git branch -M main
-git remote add origin https://github.com/hkzping999/Argo-Pro.git
-git push --force origin main
-```
 
 更多上传说明见 `UPLOAD_TO_GITHUB.md`。
